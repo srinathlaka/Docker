@@ -83,7 +83,7 @@ docker images
 
 Run docker image
 ```
-docker run -p 5000:5000 -e PORT=5000 12b786756023
+docker run -p 5000:5000 -e PORT=5000 477645e82cf8 gunicorn -w 4 app:app
 ```
 
 To check running container in docker

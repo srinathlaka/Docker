@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 from typing import List
 
 
@@ -27,8 +27,8 @@ name = PROJECT_NAME,
 version= VERSION,
 author= AUTHOR,
 description = DESCRIPTION,
-packages= PACKAGES,
-install_requires = get_requirements_list()
+packages= find_packages(),
+install_requires = get_requirements_list().remove("-e .")
 
 )
 

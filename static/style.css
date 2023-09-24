@@ -11,3 +11,26 @@ h1 {
 }
 
 
+.background-image {
+    /* Set the background image and its properties */
+    background-image: url('path/to/your/image.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Adjust the size to cover the entire container */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background position */
+}
+
+/* CSS for the image container */
+.image-container {
+    /* Set a maximum width to control image size */
+    max-width: 100%;
+    /* Center the image horizontally within the container */
+    margin: 0 auto;
+    /* Optional: Add some space around the image if needed */
+    padding: 10px;
+    /* Optional: Add a border or box shadow to the container */
+    border: 1px solid #ccc;
+    /* Optional: Center the container vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
